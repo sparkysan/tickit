@@ -18,7 +18,9 @@
         "sensio/generator-bundle": "dev-master",
         "jms/security-extra-bundle": "1.1.*",
         "jms/di-extra-bundle": "1.0.*",
-        "friendsofsymfony/user-bundle": "*"
+        "friendsofsymfony/user-bundle": "*",
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "gedmo/doctrine-extensions": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
