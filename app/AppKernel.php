@@ -20,7 +20,8 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-//            new Gedmo\DoctrineExtensions() todo: finish configuration of Gedmo bundle
+            // ---- Tickit Bundles Below Here ----
+            new Tickit\UserBundle\TickitUserBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

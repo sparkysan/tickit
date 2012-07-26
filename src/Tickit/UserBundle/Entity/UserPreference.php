@@ -3,7 +3,7 @@
 namespace Tickit\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-//use Gedmo\Mapping\Annotation as Gedmo; -- need to install gedmo bundle
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass="Tickit\UserBundle\Entity\Repository\UserPreferenceRepository")

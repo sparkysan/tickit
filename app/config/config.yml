@@ -57,3 +57,11 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+
+# FOSUserBundle Configuration
+fos_user:
+    db_driver:     orm
+    firewall_name: main
+    use_listener: false
+    user_class:   Tickit\UserBundle\Entity\User

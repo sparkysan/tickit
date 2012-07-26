@@ -1,4 +1,4 @@
 .idea
-app/cache
+app/cache/dev
 vendor/*
 composer.phar
