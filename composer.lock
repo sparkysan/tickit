@@ -1,5 +1,5 @@
 {
-    "hash": "a4e9b37ed8ff47d4abec5ac6accb583a",
+    "hash": "509ee9db32cb26e416e1f0f122cfcb22",
     "packages": [
         {
             "package": "doctrine/common",
@@ -49,15 +49,9 @@
         },
         {
             "package": "gedmo/doctrine-extensions",
-            "version": "dev-master",
-            "alias-pretty-version": "2.3.x-dev",
-            "alias-version": "2.3.9999999.9999999-dev"
-        },
-        {
-            "package": "gedmo/doctrine-extensions",
-            "version": "dev-master",
-            "source-reference": "9898253452a37733d278af6fc595b059327c4218",
-            "commit-date": "1342872222"
+            "version": "2.2.x-dev",
+            "source-reference": "v2.2.3",
+            "commit-date": "1339767845"
         },
         {
             "package": "jms/aop-bundle",
@@ -164,8 +158,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "af47e762c30feccb24b0d7f9fe2475a274eea745",
-            "commit-date": "1343247538"
+            "source-reference": "e08e60ce311746d09551c1cf3e34a2cf43f6a4e0",
+            "commit-date": "1343284557"
         },
         {
             "package": "twig/extensions",
@@ -200,7 +194,6 @@
         "sensio/distribution-bundle": 20,
         "sensio/framework-extra-bundle": 20,
         "sensio/generator-bundle": 20,
-        "doctrine/doctrine-fixtures-bundle": 20,
-        "gedmo/doctrine-extensions": 20
+        "doctrine/doctrine-fixtures-bundle": 20
     }
 }

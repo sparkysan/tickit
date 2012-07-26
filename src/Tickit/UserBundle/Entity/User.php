@@ -4,7 +4,7 @@ namespace Tickit\UserBundle\Entity;
 
 use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
-//use Gedmo\Mapping\Annotation as Gedmo; -- need to install this bundle
+use Gedmo\Mapping\Annotation as Gedmo;
 
 
 /**
@@ -35,12 +35,12 @@ class User extends BaseUser
 
     /**
      * @todo This should be moved to a separate DB to allow concurrent sessions
-     * @ORM\Column(type="string", length=32, nullable="true")
+     * @ORM\Column(type="string", length=32, nullable=true)
      */
     protected $session_token;
 
     /**
-     * @ORM\Column(type="datetime", nullable="true")
+     * @ORM\Column(type="datetime", nullable=true)
      */
     protected $last_activity;
 
