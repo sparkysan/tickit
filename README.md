@@ -16,6 +16,7 @@ Then, install dependencies using...
 It should install all required vendor bundles.
 
 
+
 2. Copy app/config/parameters.yml.dist to app/config/parameters.yml and add in your own database/mailer configuration. Then run the following command from the project directory in your terminal...
 
     php app/console doctrine:schema:create
