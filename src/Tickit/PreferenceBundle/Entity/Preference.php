@@ -11,6 +11,9 @@ class Preference
 {
     //create constants here to map to setting names
 
+    const TYPE_PERSONAL = 'personal';
+    const TYPE_SYSTEM = 'system';
+
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
@@ -19,7 +22,7 @@ class Preference
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=150)
+     * @ORM\Column(type="string", length=100)
      */
     protected $name;
 
@@ -28,6 +31,11 @@ class Preference
      * @ORM\Column(type="string", length=250)
      */
     protected $default_value;
+
+    /**
+     * @ORM\Column(type="string", length=8)
+     */
+    protected $type;
 
     /**
      * Get id
@@ -77,5 +85,31 @@ class Preference
     public function getDefaultValue()
     {
         return $this->default_value;
+    }
+
+
+    /**
+     * Sets the type
+     *
+     * @throws \InvalidArgumentException
+     * @param  string $type
+     * @return void
+     */
+    public function setType($type)
+    {
+        if(!in_array($type, array(self::TYPE_PERSONAL, self::TYPE_SYSTEM))) {
+            throw new \InvalidArgumentException('An invalid type has been specified in Preference entity');
+        }
+        $this->type = $type;
+    }
+
+    /**
+     * Returns the type of the preference
+     *
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
     }
 }
