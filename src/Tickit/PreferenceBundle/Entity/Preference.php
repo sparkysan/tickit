@@ -19,13 +19,13 @@ class Preference
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length="150")
+     * @ORM\Column(type="string", length=150)
      */
     protected $name;
 
 
     /**
-     * @ORM\Column(type="string", length="250")
+     * @ORM\Column(type="string", length=250)
      */
     protected $default_value;
 
