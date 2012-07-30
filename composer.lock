@@ -98,20 +98,14 @@
         {
             "package": "sensio/framework-extra-bundle",
             "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "sensio/framework-extra-bundle",
-            "version": "dev-master",
-            "source-reference": "998f5edbffcc422ebd74dab093d9a35d96e3edf6",
-            "commit-date": "1343247216"
+            "source-reference": "fa991fca34d5474cae37a2d97e3d30058253d35c",
+            "commit-date": "1343372485"
         },
         {
             "package": "sensio/generator-bundle",
             "version": "dev-master",
-            "source-reference": "c17dbddefe517e3adfcbeaa1ab7cef3e572d29c6",
-            "commit-date": "1342195488"
+            "source-reference": "4436c2e24301123fb413baf3f78cd93bbc016c07",
+            "commit-date": "1343291371"
         },
         {
             "package": "swiftmailer/swiftmailer",
@@ -124,12 +118,6 @@
             "version": "dev-master",
             "source-reference": "8b2aa953f87da228ba413e8fb1372e49c1374050",
             "commit-date": "1342198037"
-        },
-        {
-            "package": "symfony/assetic-bundle",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/assetic-bundle",
@@ -158,8 +146,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "e08e60ce311746d09551c1cf3e34a2cf43f6a4e0",
-            "commit-date": "1343284557"
+            "source-reference": "21d4973f7987fc637532960155c9f0e7d5758c15",
+            "commit-date": "1343388006"
         },
         {
             "package": "twig/extensions",
