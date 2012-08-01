@@ -31,6 +31,11 @@ class Ticket
     protected $comments;
 
     /**
+     * @ORM\OneToMany(targetEntity="TicketAttachment", mappedBy="ticket")
+     */
+    protected $attachments;
+
+    /**
      * @ORM\OneToMany(targetEntity="TicketUserSubscription", mappedBy="user")
      */
     protected $ticket_subscriptions;
