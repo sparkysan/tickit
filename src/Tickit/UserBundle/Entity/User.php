@@ -44,25 +44,11 @@ class User extends BaseUser
      */
     protected $last_activity;
 
-    /**
-     * Class constructor
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
 
     /**
-     * @param $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
+     * Gets the ID for this user
+     *
+     * @return int
      */
     public function getId()
     {
@@ -70,23 +56,9 @@ class User extends BaseUser
     }
 
     /**
-     * @param $created
-     */
-    public function setCreated($created)
-    {
-        $this->created = $created;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCreated()
-    {
-        return $this->created;
-    }
-
-    /**
-     * @param $last_activity
+     * Updates the last activity time
+     *
+     * @param \DateTime $last_activity
      */
     public function setLastActivity($last_activity)
     {
@@ -94,7 +66,9 @@ class User extends BaseUser
     }
 
     /**
-     * @return mixed
+     * Gets the last activity time as a DateTime object
+     *
+     * @return \DateTime
      */
     public function getLastActivity()
     {
@@ -102,7 +76,9 @@ class User extends BaseUser
     }
 
     /**
-     * @param $session_token
+     * Sets the session token for this user
+     *
+     * @param string $session_token
      */
     public function setSessionToken($session_token)
     {
@@ -110,7 +86,9 @@ class User extends BaseUser
     }
 
     /**
-     * @return mixed
+     * Returns the current session token
+     *
+     * @return string
      */
     public function getSessionToken()
     {
@@ -118,19 +96,23 @@ class User extends BaseUser
     }
 
     /**
-     * @param $updated
-     */
-    public function setUpdated($updated)
-    {
-        $this->updated = $updated;
-    }
-
-    /**
-     * @return mixed
+     * Gets the time this user was updated as a DateTime object
+     *
+     * @return \DateTime
      */
     public function getUpdated()
     {
-        return $this->updated;
+        return new \DateTime($this->updated);
+    }
+
+    /**
+     * Gets the created time as a DateTime object
+     *
+     * @return \DateTime
+     */
+    public function getCreated()
+    {
+        return new \DateTime($this->created);
     }
 
 }
