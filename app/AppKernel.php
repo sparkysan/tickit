@@ -22,7 +22,8 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             // ---- Tickit Bundles Below Here ----
             new Tickit\UserBundle\TickitUserBundle(),
-            new Tickit\PreferenceBundle\TickitPreferenceBundle()
+            new Tickit\PreferenceBundle\TickitPreferenceBundle(),
+            new Tickit\TeamBundle\TickitTeamBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
