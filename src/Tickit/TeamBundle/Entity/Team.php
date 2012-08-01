@@ -21,7 +21,6 @@ class Team
     protected $id;
 
     /**
-     * @ORM\Id
      * @ORM\Column(type="string", length=120)
      */
     protected $name;
