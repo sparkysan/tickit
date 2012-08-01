@@ -15,15 +15,25 @@ class Ticket
 
     /**
      * @ORM\Id
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="bigint")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length="100")
+     * @ORM\Column(type="string", length=100)
      */
     protected $title;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Comment", mappedBy="ticket")
+     */
+    protected $comments;
+
+    /**
+     * @ORM\OneToMany(targetEntity="TicketUserSubscription", mappedBy="user")
+     */
+    protected $ticket_subscriptions;
 
 //todo: add this in when project entity is created
 //    protected $project;
@@ -35,12 +45,12 @@ class Ticket
     protected $status;
 
     /**
-     * @ORM\Column(type="string", length="4000")
+     * @ORM\Column(type="string", length=4000)
      */
     protected $description;
 
     /**
-     * @ORM\Column(type="string", length="4000")
+     * @ORM\Column(type="string", length=4000)
      */
     protected $replication_steps;
 
