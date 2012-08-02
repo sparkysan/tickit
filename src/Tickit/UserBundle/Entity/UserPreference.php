@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
- * @ORM\Entity(repositoryClass="Tickit\UserBundle\Entity\Repository\UserPreferenceRepository")
+ * @ORM\Entity
  * @ORM\Table(name="user_preferences")
  */
 class UserPreference
