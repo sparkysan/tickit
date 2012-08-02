@@ -46,6 +46,14 @@ class User extends BaseUser
 
 
     /**
+     * Class constructor
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    /**
      * Gets the ID for this user
      *
      * @return int
