@@ -40,8 +40,11 @@ class Ticket
      */
     protected $ticket_subscriptions;
 
-//todo: add this in when project entity is created
-//    protected $project;
+    /**
+     * @ORM\ManyToOne(targetEntity="Tickit\ProjectBundle\Entity\Project")
+     * @ORM\JoinColumn(name="project_id", referencedColumnName="id")
+     */
+    protected $project;
 
     /**
      * @ORM\ManyToOne(targetEntity="Tickit\TicketBundle\Entity\TicketStatus")
