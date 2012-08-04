@@ -224,7 +224,7 @@ class Ticket
      */
     public function getUpdated()
     {
-        return new \DateTime($this->updated);
+        return $this->updated;
     }
 
     /**
@@ -234,7 +234,7 @@ class Ticket
      */
     public function getCreated()
     {
-        return new \DateTime($this->created);
+        return $this->created;
     }
 
 
