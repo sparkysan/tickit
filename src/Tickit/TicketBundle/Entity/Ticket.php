@@ -63,6 +63,16 @@ class Ticket
     protected $replication_steps;
 
     /**
+     * @ORM\Column(type="float")
+     */
+    protected $estimated_hours;
+
+    /**
+     * @ORM\Column(type="float")
+     */
+    protected $actual_hours;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Tickit\UserBundle\Entity\User")
      * @ORM\JoinColumn(name="reported_by_id", referencedColumnName="id")
      */

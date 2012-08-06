@@ -146,8 +146,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "21d4973f7987fc637532960155c9f0e7d5758c15",
-            "commit-date": "1343388006"
+            "source-reference": "0ccda3877538367c5aa73f7c0a557e643cfb2c70",
+            "commit-date": "1344241030"
         },
         {
             "package": "twig/extensions",
@@ -164,8 +164,8 @@
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "657de7bdeb680815e0df95f63da9f81e1533d2ea",
-            "commit-date": "1342953178"
+            "source-reference": "51c866f415bbee670cd9ba13591307bce8dabdca",
+            "commit-date": "1343464333"
         }
     ],
     "packages-dev": null,
