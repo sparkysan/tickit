@@ -27,9 +27,9 @@ class TicketAttachment
     protected $ticket;
 
     /**
-     * @ORM\Column(type="string", length=300)
+     * @ORM\Column(type="string", length=60)
      */
-    protected $path;
+    protected $filename;
 
     /**
      * @ORM\Column(type="string", length=30)
@@ -67,23 +67,23 @@ class TicketAttachment
     }
 
     /**
-     * Gets the path to this attachment
+     * Gets the filename of this attachment
      *
      * @return string
      */
-    public function getPath()
+    public function getFilename()
     {
-        return $this->path;
+        return $this->filename;
     }
 
     /**
-     * Sets the path for this attachment
+     * Sets the filename for this attachment
      *
-     * @param string $path
+     * @param string $name
      */
-    public function setPath($path)
+    public function setFilename($name)
     {
-        $this->path = $path;
+        $this->filename = $name;
     }
 
     /**
