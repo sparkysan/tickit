@@ -34,10 +34,9 @@ class User extends BaseUser
     protected $updated;
 
     /**
-     * @todo This should be moved to a separate DB to allow concurrent sessions
-     * @ORM\Column(type="string", length=32, nullable=true)
+     * @ORM\OneToMany(targetEntity="UserSession", mappedBy="user")
      */
-    protected $session_token;
+    protected $sessions;
 
     /**
      * @ORM\Column(type="datetime", nullable=true)
