@@ -1,0 +1,53 @@
+# TeamBundle Routes
+
+team_show:
+  pattern: /teams/{id}
+  defaults: { _controller: TickitTeamBundle:Team:edit }
+  requirements:
+    _method: GET
+
+team_update:
+  pattern: /teams/{id}/update
+  defaults: { _controller: TickitTeamBundle:Team:update }
+  requirements:
+    _method: POST
+
+team_new:
+  pattern: /teams/new
+  defaults: { _controller: TickitTeamBundle:Team:new }
+  requirements:
+      _method: GET
+
+team_create:
+  pattern: /teams/create
+  defaults: { _controller: TickitTeamBundle:Team:create }
+  requirements:
+    _method: POST
+
+team_index:
+  pattern: /teams/{page}
+  defaults: { _controller: TickitTeamBundle:Team:index, page: 1 }
+  requirements:
+    page: \d+
+
+
+# FOSUserBundle Routes
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
