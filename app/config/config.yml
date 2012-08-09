@@ -1,6 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: @TickitUserBundle/Resources/config/services.yml }
 
 framework:
     #esi:             ~
@@ -63,5 +64,4 @@ swiftmailer:
 fos_user:
     db_driver:     orm
     firewall_name: main
-    use_listener: false
     user_class:   Tickit\UserBundle\Entity\User

@@ -1,0 +1,6 @@
+services:
+  activity_listener:
+    class: Tickit\UserBundle\Listener\Activity
+    arguments: [@security.context, @doctrine]
+    tags:
+      - { name: kernel.event_listener, event: kernel.controller, method: onCoreController }
