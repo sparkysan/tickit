@@ -20,7 +20,7 @@
         "jms/di-extra-bundle": "1.0.*",
         "friendsofsymfony/user-bundle": "*",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
-        "gedmo/doctrine-extensions": "2.2.*"
+        "stof/doctrine-extensions-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

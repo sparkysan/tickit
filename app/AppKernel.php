@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             // ---- Tickit Bundles Below Here ----
             new Tickit\UserBundle\TickitUserBundle(),
             new Tickit\PreferenceBundle\TickitPreferenceBundle(),

@@ -35,7 +35,7 @@ class Project
 
     /**
      * @ORM\Column(type="datetime")
-     * @Gedmo\Timestampable(on="created")
+     * @Gedmo\Timestampable(on="create")
      */
     protected $created;
 
